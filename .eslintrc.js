@@ -11,7 +11,7 @@ module.exports = {
   },
   rules: {
     'class-methods-use-this': 'off',
-    'no-unused-vars': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: 'next' }, { argsIgnorePattern: 'response' }],
     'no-shadow': 'off',
     'import/no-extraneous-dependencies': 'off',
     'consistent-return': 'off',
